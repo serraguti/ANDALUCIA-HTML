@@ -9,6 +9,23 @@
 <body>
     <h1>Otros controles formulario</h1>
     <form>
+        <label>Introduzca su nombre: </label>
+        <input type="text" name="cajanombre" list="datanombres"/><hr/>
+
+        <datalist id="datanombres">
+            <option value="Ana"/>
+            <option value="Anabel"/>
+            <option value="Anita"/>
+            <option value="Adrian"/>
+            <option value="Beatriz"/>
+            <option value="Raul"/>
+            <option value="Ricardo" />
+            <option value="Vanesa"/>
+            <option value="Vanessa" />
+            <option value="Veronica"/>
+        </datalist>
+
+
         <label>Seleccione sus deportes favoritos: </label>
         <select name="deportes" size="5" multiple>
             <option value="petanca">Petanca</option>
