@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Controles de formulario</h1>
+    <form>
+        <label>Introduzca un nombre: </label>
+        <input type="text" name="cajanombre" required/>
+        <input type="hidden" name="cajadni" value="12345678X"/>
+        <br/>
+        <label>Introduzca su edad</label>
+        <input type="range" name="rangoedad" min="18" max="65"/>
+        <br/>
+        <label>Introduzca una fecha</label>
+        <input type="date" name="fecha"/> 
+        <br/>
+        <label>Acepte las condiciones</label>
+        <input type="checkbox" name="condiciones"/>
+        <br/>
+        <label>Seleccione sus deportes favoritos</label> 
+        <ul>
+            <li>
+                <input type="checkbox" name="deporte" value="Petanca"/> Petanca
+            </li>
+            <li>
+                <input type="checkbox" name="deporte" value="Curling"/> Curling
+            </li>
+            <li>
+                <input type="checkbox" name="deporte" value="Padel"/> Padel
+            </li>
+        </ul>
+        <br/>
+        <label>Seleccione si equipo favorito: </label>
+        <ul>
+            <li>
+                <input type="radio" value="Real Madrid" name="equipo"/>Real Madrid
+            </li>
+            <li>
+                <input type="radio" value="Betis" name="equipo" /> Betis
+            </li>
+            <li>
+                <input type="radio" value="Sevilla" name="equipo"/>Sevilla
+            </li>
+        </ul>
+        <button type="submit">
+            Enviar datos
+        </button>
+    </form>
+</body>
+</html>
